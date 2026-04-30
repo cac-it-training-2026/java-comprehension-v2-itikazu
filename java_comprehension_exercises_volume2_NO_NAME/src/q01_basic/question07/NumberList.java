@@ -22,7 +22,9 @@ class NumberList {
 	 */
 	public void addFromOneTo(Integer limit) {
 		//TODO ここから実装する
-
+		for (int i = 0; i < numbers.size(); i++) {
+			numbers.add(limit);
+		}
 	}
 
 	/**
@@ -33,8 +35,12 @@ class NumberList {
 	public Integer calcSumOfList() {
 		Integer sum = 0;
 		//TODO ここから実装する
+		for (int i = 0; i < numbers.size(); i++) {
+			sum += numbers.get(i);
+		}
 
 		return sum;
+
 	}
 
 	/**
@@ -43,6 +49,9 @@ class NumberList {
 	 */
 	public void doubleListEachValue() {
 		//TODO ここから実装する
+		for (Integer integer : numbers) {
+			System.out.println(integer * 2);
+		}
 	}
 
 	/**
@@ -51,7 +60,12 @@ class NumberList {
 	 */
 	public void removeIndexOfFirstHalf() {
 		//TODO ここから実装する
-
+		for (Integer integer : numbers) {
+			System.out.println(integer * 2);
+			if (integer < (numbers.size() / 2)) {
+				numbers.remove(0);
+			}
+		}
 	}
 
 	/**
