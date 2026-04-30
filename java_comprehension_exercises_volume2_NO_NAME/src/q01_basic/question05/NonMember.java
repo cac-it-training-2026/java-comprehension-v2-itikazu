@@ -2,6 +2,7 @@ package q01_basic.question05;
 
 public class NonMember extends AbstMember {
 	public NonMember(String name) {
+		this.name = name;
 	}
 
 	public void buyItem() {

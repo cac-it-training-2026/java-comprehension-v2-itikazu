@@ -9,7 +9,16 @@ public class SystemMain07 {
 		System.out.print("input number>>");
 		int limit = 0;
 		//TODO ここから実装する
+		ConsoleReader consoleReader = new ConsoleReader();
+		try {
+			consoleReader.inputNumber();
 
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("error!");
+			e.printStackTrace();
+			return;
+		}
 		System.out.println("****************");
 		System.out.println("Listの合計を計算します");
 		int sum = 0;
